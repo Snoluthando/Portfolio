@@ -1,206 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snoluthando Siziba - Web Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
- 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thando Siziba — Software Developer</title>
+<meta name="description" content="Portfolio of Thando Siziba, a software developer building efficient, scalable and meaningful digital solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<a class="skip" href="#home">Skip to content</a>
+<header class="nav" id="nav">
+  <a class="mark" href="#home" aria-label="Thando Siziba, home">TS.</a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav aria-label="Primary"><ul class="nav__list" id="menu">
+    <li><a href="#home">Home</a></li><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+</header>
 
+<main>
+<section class="hero" id="home">
+  <div class="hero__img"><img data-parallax="0.12" src="Monochrome Mountain in Stormy Mist.png" alt="Monochrome mountain ridgelines fading into dark foreground" fetchpriority="high"></div>
+  <div class="wrap hero__grid">
+    <h1 class="hero__title"><span>Thando</span><span>Siziba.</span></h1>
+    <p class="hero__tag label">Ideate. Build. Innovate.</p>
+    <p class="hero__intro">I’m a software developer and technology enthusiast focused on building efficient, scalable and meaningful digital solutions.</p>
+    <p class="hero__cta"><a class="btn" href="#work">Explore my work →</a><a class="link" href="#about">About me →</a></p>
+  </div>
+</section>
 
-      <div class="container">
-        <!-- Homepage Section -->
-        <section id="home">
-            <h1>Snoluthando Siziba</h1>
-            <img src="https://images.unsplash.com/photo-1692772819238-7c3fd60917cd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Alex Johnson - Web Developer" class="profile-pic">
-            <p class="intro">
-                Welcome to my website portfolio. I am a dedicated hard-working junior web developer with a fresh perspective 
-                and enthusiasm for creating highly appealing, functional websites. I am continously completeing intensive 
-                training and courses in modern web development which give me better understanding on how to properly build websites, and I'm excited to bring creativity, efficiency and technical 
-                skills to your next project.
-            </p>
-        </section>
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="head reveal"><p class="label">Selected work</p><h2>Selected work <em>01–04</em></h2>
+    <p class="lede">A collection of projects, experiments and solutions built around real-world problems.</p></header>
 
-    
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a curious web developer who loves turning ideas into reality through code. 
-                With a foundation  that is connstanly being strenghtened in web technologies and a keen eye for design, I create 
-                user-friendly experiences that engage and delight users.
-            </p>
-            
-            <h3 style="color: #001b96; margin-top: 2rem;">My Skills</h3>
-            <ul class="skills-list">
-                <li class="skill-item">HTML5 & Semantic Markup</li>
-                <li class="skill-item">CSS3 & Responsive Design</li>
-                <li class="skill-item">Git & Version Control</li>
-                <li class="skill-item">UI/UX Design Principles</li>
-                
-            </ul>
-        </section>
+    <article class="project project--lg reveal">
+      <a href="#" class="project__link" aria-label="View Edutrak">
+        <div class="project__media"><img src="assets/images/placeholder.svg" alt="Edutrak interface preview (placeholder)" loading="lazy"></div>
+        <div class="project__body"><span class="label">01 · SaaS / Educational Management Software</span><h3>Edutrak</h3>
+        <p>A comprehensive educational management platform designed to streamline the way schools and institutions handle student data, course management, and academic reporting.</p>
+        <p class="label stack" data-stack>HTML,CSS,JAVASCRIPT,NETLIFY</p><span class="view">View project <i>→</i></span></div>
+      </a>
+    </article>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">Media Company Website</div>
-                    <div class="project-content">
-                        <h3 class="project-title">North Rocket</h3>
-                        <p>
-                            A fully responsive media company website featuring an interactive menu, 
-                            online hiring system, and beautiful image gallery. Built with 
-                            HTML, CSS, and JavaScript.
-                        </p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                </article>
+    <article class="project project--sm reveal">
+      <a href="#" class="project__link" aria-label="View Sentinel">
+        <div class="project__media"><img src="assets/images/placeholder.svg" alt="Sentinel interface preview (placeholder)" loading="lazy"></div>
+        <div class="project__body"><span class="label">02 · Public Safety / Software Development</span><h3>Sentinel</h3>
+        <p>A crime-awareness and patrol coordination concept designed to improve communication and situational awareness through location-based technology.</p>
+        <p class="label stack">Python,C,C++,SQL,SSMS,SUPABASE</p><span class="view">View project <i>→</i></span></div>
+      </a>
+    </article>
 
-                <article class="project-card">
-                    <div class="project-image">Weather App</div>
-                    <div class="project-content">
-                        <h3 class="project-title">Weather Dashboard</h3>
-                        <p>
-                            An interactive weather application that fetches real-time data using 
-                            APIs. Features include location search, 5-day forecast, and dynamic 
-                            backgrounds based on weather conditions.
-                        </p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <article class="project project--sm project--flip reveal">
+      <a href="#" class="project__link" aria-label="View Mzansifix">
+        <div class="project__media"><img src="assets/images/placeholder.svg" alt="Mzansifix interface preview (placeholder)" loading="lazy"></div>
+        <div class="project__body"><span class="label">03 · City Management / Maintenance reporting</span><h3>Mzansifix</h3>
+        <p>A reporting tool for managing and tracking maintenance requests in urban environments.</p>
+        <p class="label stack">C#,CSS,HTML,.NET,SQL,SSMS</p><span class="view">View project <i>→</i></span></div>
+      </a>
+    </article>
 
-        <!-- Education & Experience Section -->
-        <section id="education">
-            <h2>Education & Experience</h2>
-            
-            <h3 style="color: #001b96; margin-top: 2rem;">Education History</h3>
-            <table class="edu-table">
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Qualification</th>
-                        <th>Institution</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2025-2025</td>
-                        <td>Web Development Certificate</td>
-                        <td>CTU Training Solutions</td>
-                    </tr>
-                    <tr>
-                    <td>2025-2025</td>
-                        <td>Azure - Describe cloud service types</td>
-                        <td>CTU Training Solutions</td>
-                    </tr>
-                    <tr>
-                     <td>2025-2025</td>
-                        <td>Azure - Describe cloud service types</td>
-                        <td>CTU Training Solutions</td>
-                    </tr>
-                    <tr>
-                        <td>2025-2025</td>
-                        <td>Azure - Describe cost management in Azure</td>
-                        <td>CTU Training Solutions</td>
-                    </tr>
-                    <tr>
-                        <td>2020-2024</td>
-                        <td>High School Bachelors Degree</td>
-                        <td>Hoerskool Piet Potgieter</td>
-                    </tr>
-                </tbody>
-            </table>
+    <article class="project project--lg project--flip reveal">
+      <a href="#" class="project__link" aria-label="View WebuyApple">
+        <div class="project__media"><img src="assets/images/placeholder.svg" alt="WebuyApple interface preview (placeholder)" loading="lazy"></div>
+        <div class="project__body"><span class="label">04 · E-Commerce / Online Store</span><h3>WebuyApple</h3>
+        <p>A simple online store for purchasing secondhand refurbished Apple products.</p>
+        <p class="label stack">HTML,CSS,JavaScript</p><span class="view">View project <i>→</i></span></div>
+      </a>
+    </article>
+  </div>
+</section>
 
-            <h3 style="color: #001b96; margin-top: 2rem;">Work Experience</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Junior Business analyst- NovaTech Digital (2025)</h4>
-                    <p>
-                        Assisted in gathering and analyzing business requirements for client projects,
-                        gathered data and necessary information to help develop effective solutions.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <h4>Freelance Web Designer (2025)</h4>
-                    <p>
-                        Created custom websites for small businesses, focusing on responsive 
-                        design and user experience optimization.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>Email</strong>
-                    <p>sf.siziba@gmail.com</p>
-                </div>
-                <div class="contact-item">
-                    <strong>Phone</strong>
-                    <p>+27 81 428 5709</p>
-                </div>
-                <div class="contact-item">
-                    <strong>Location</strong>
-                    <p>Pretoria, South Africa</p>
-                </div>
-            </div>
-
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+<section class="section section--light" id="about">
+  <div class="wrap about">
+    <h2 class="reveal">Driven by technology.<br>Built for impact.</h2>
+    <div class="about__text reveal">
+      <p class="big">I’m a software developer with an interest in building practical solutions, exploring emerging technologies and understanding how software can solve complex problems.</p>
+      <p>My approach combines analytical thinking, continuous learning and hands-on development. I enjoy working through technical challenges and turning ideas into functional applications.</p>
+      <dl>
+        <dt class="label">Philosophy</dt><dd>Start from the real problem, then choose the simplest tool that solves it.</dd>
+        <dt class="label">Interests</dt><dd>Business automation, data, cloud and AI-assisted development.</dd>
+        <dt class="label">Ambition</dt><dd>To build software products that make complex operations easier to run.</dd>
+      </dl>
     </div>
+  </div>
+</section>
 
-    <script>
-        // Smooth scrolling for navigation
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
+<section class="section" id="expertise">
+  <div class="wrap">
+    <h2 class="reveal">Tools are only as good as what you build with them.</h2>
+    <div class="skills">
+      <div class="skill reveal"><h3 class="label">Development</h3><ul><li>Python</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C#</li><li>Flutter</li></ul></div>
+      <div class="skill reveal"><h3 class="label">Data &amp; Databases</h3><ul><li>SQL</li><li>SQL Server</li><li>Supabase</li><li>Data Analysis</li><li>Power BI</li></ul></div>
+      <div class="skill reveal"><h3 class="label">Cloud &amp; Tools</h3><ul><li>Microsoft Azure</li><li>Git</li><li>GitHub</li><li>Visual Studio Code</li><li>PowerShell</li></ul></div>
+      <div class="skill reveal"><h3 class="label">Artificial Intelligence</h3><ul><li>AI-assisted development</li><li>Prompt engineering</li><li>Machine learning exploration</li><li>AI integration</li></ul></div>
+    </div>
+  </div>
+</section>
 
-        // Form submission handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    </script>
+<section class="section section--light" id="journey">
+  <div class="wrap">
+    <h2 class="reveal">Always building.<br>Always learning.</h2>
+    <ol class="timeline">
+      <li class="reveal"><span class="label">Education</span><p>Software development at CTU Training Solutions.</p></li>
+      <li class="reveal"><span class="label">Certifications</span><p>Pearsonvue IT Specialist - Python,HTML & CSS.</p></li>
+      <li class="reveal"><span class="label">Projects</span><p>InvoiceFlow, Sentinel, MineOps and OrderFlow.</p></li>
+      <li class="reveal"><span class="label">Ongoing</span><p>Continued exploration of cloud, data and AI tooling.</p></li>
+      <li class="reveal"><span class="label">Next</span><p>A professional software engineering role.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <h2 class="contact__title reveal">Have something interesting in mind?</h2>
+    <p class="lede reveal">I’m always interested in discussing projects, technical challenges and opportunities to build something meaningful.</p>
+    <p class="contact__links reveal"><a class="btn" href="mailto:sf.siziba@gmail.com">sf.siziba@gmail.com</a>
+    <a class="link" href="https://github.com/Snoluthando" rel="noopener">GitHub →</a><a class="link" href="https://www.linkedin.com/" rel="noopener">LinkedIn →</a><a class="link" href="assets/Snoluthando_Siziba CV.pdf" download>Download CV →</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap footer__row">
+  <a class="mark" href="#home" aria-label="Back to top">TS.</a>
+  <p class="label">Built with intention. © <span id="year"></span></p>
+  <p class="label"><a href="https://github.com/" rel="noopener">GitHub</a> &nbsp; <a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a> &nbsp; <a href="#home">Back to top ↑</a></p>
+</div></footer>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<script src="main.js"></script>
 </body>
 </html>
